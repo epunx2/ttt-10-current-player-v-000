@@ -11,10 +11,10 @@ end
 def current_player(board)
   current = 0
   turns = turn_count(board)
-  if even?(turns)
+  if even?.turns
     return "X"
   end
-  if odd?(turns)
-    return "0"
+  if odd?.turns
+    return "O"
   end
 end
